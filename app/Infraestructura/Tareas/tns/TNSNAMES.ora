@@ -1,0 +1,9 @@
+SALUD.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = scan-clices.clinicaces.loc)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = hiscess)
+    )
+  )
+
