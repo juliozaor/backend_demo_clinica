@@ -200,8 +200,9 @@ async guardarArchivo(archivo: any, tiposoporte: string, factura: string, documen
     };
   } catch (error) {
     this.servicioLogs.Archivo(factura,nombreSinExtension,'Guardar',documento,'Fallo')
-
-    throw new Error('Error al guardar el archivo');
+    console.log(error)
+    return error;
+   // throw new Error('Error al guardar el archivo');
   }
 }
 
